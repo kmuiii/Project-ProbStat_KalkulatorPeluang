@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Peluang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="#biodata" class="nav-link">Biodata</a>
+            </li>
+            <li class="nav-item">
+                <a href="#materi" class="nav-link">Materi</a>
+            </li>
+            <li class="nav-item">
+                <a href="#kalkulator" class="nav-link">Kalkulator</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- PAGE BIODATA -->
+    <div id="biodata">
+        <h1 class="judul-page">OUR TEAM</h1>
+        <div class="buat-foto">
+            <div class="profile">
+                <img src="img/reja.jpg" alt="anggota-01">
+                <p class="nama">AREZA NOOR PRATAMA<br>
+                    H1D024053</p>
+            </div>
+            <div class="profile">
+                <img src="img/parel.jpg" alt="anggota-02">
+                <p class="nama">FARREL ATHALLADHIA R<br>
+                H1D024054</p>
+            </div>
+            <div class="profile">
+                <img src="img/adjeng.jpg" alt="anggota-03">
+                <p class="nama">ADJENG MUTIARA DEWI<br>
+                    H1D024055</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAGE MATERI -->
+     <div id="materi">
+        <h1 class="judul-page">MATERI</h1>
+        <p class="judul-page">Probabilitas</p>
+        
+        <div class="konten-materi">
+            <div class="ini-materi">
+                <p><b>Probabilitas</b> atau <b>Peluang</b> adalah kemungkinan terjadinya suatu kejadian.</p>
+                <p>Rumus dasar probabilitas adalah P(A) = n(A) / n(S), di mana P(A) adalah probabilitas kejadian A, n(A) adalah jumlah hasil yang menguntungkan (kejadian A terjadi), dan n(S) adalah jumlah total hasil yang mungkin dalam ruang sampel.</p>
+            </div>
+    
+            <div class="ilustrasi">
+                <img src="img/ilustrasi.png" alt="ilustrasi">
+            </div>
+        </div>
+     </div>
+
+     <!-- PAGE KALKULATOR -->
+      <div id="kalkulator">
+        <h1 class="judul-page">KALKULATOR</h1>
+        <p class="judul-page">Menghitung Peluang Gacha</p>
+        <div class="kalkulatornya">
+            <label for="jumlahItem">Berapa banyak macam barang?</label>
+            <input type="number" id="jumlahItem" min="1" max="100" />
+            <button onclick="buatInput()">Membuat Input</button>
+
+            <div id="itemContainer" class="item-inputs"></div>
+
+            
+            <label for="itemDipilih">Mau berharap mendapatkan item apa?</label>
+            <input type="text" id="itemDipilih" placeholder="e.g., Apple" />
+
+            <button onclick="hitungPeluang()">Menghitung Peluang</button>
+
+            <p id="result"></p>
+        </div>
+      </div>
+
+      <script src="script.js"></script>
+</body>
+</html>
